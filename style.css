@@ -1,13 +1,16 @@
+* {
+    font-family: 'Acme', sans-serif;
+}
 body
 {
     margin: 0px;
-    background-color: rgb(53, 46, 46);
+   
 }
 nav{
     width: 100%;
     height: 60px;
     margin: 0 auto;
-    background-color: rgba(36, 39, 35, 0.596);
+    background-color: rgb(247, 252, 246);
     position: sticky;
     top: 0px;
     background-attachment:fixed ;
@@ -38,14 +41,14 @@ nav ul::after{
 nav a{
     display: block;
     text-decoration: none;
-    color: rgb(201, 196, 196);
+    color: rgb(19, 17, 17);
     border-bottom: 2px solid transparent;
     padding: 10px 10px;
 }   
 
 nav a:hover{
-    color: rgb(223, 223, 223);
-    border-bottom: 2px solid gold;
+    color: rgba(82, 75, 75, 0.74);
+    
     padding-bottom: 10px;
 }
 .deroulant >a::after{
@@ -75,7 +78,7 @@ nav a:hover{
 }
 .sous a:hover{
     border-bottom: none;
-    background-color: 
+    
 }
 .home
 {
@@ -91,26 +94,92 @@ nav a:hover{
 .section-1
 {
     height: 100vh;
-    background: url(plage\ cocotier.jpg);
+    background: url(vacances.jpeg);
     background-attachment:fixed ;
     background-size:cover ;
-    margin-left: 200px;
+   
+    margin-top: 100px;
+    color: rgb(114, 97, 97);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 400px;
 }
 .box
 {
-    width: 60%;
-    height: 600px;
+    width: 100%;
+    height: 400px;
 }
 
-#macarte
-{
-    float: right;
-    margin-top: 0px;
-}
+
 .bloc
 {
     border: 10px;
 
     background-color: beige;
     
+}
+
+ul
+{
+    list-style: none;
+}
+
+
+#steps ul{
+    margin: 80px 0;
+}
+
+#steps ul li{
+    width: 300px;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 100px;   
+}
+#steps h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: black;
+}
+#steps p{
+    margin-bottom: 20px; 
+    color: black;
+}
+
+#planifier{
+    background: url('crayon.PNG') no-repeat top center;
+}
+#organiser{
+    background: url('livre.PNG') no-repeat top center;
+}
+#voyager{
+    background: url('fusée.PNG') no-repeat top center;
+
+}
+
+.espacegris
+{   margin-top: 500px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(207, 201, 201);
+
+}
+input {
+    width: 250px;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    border-radius: 4px;
+    background: #e3e3e3;
+    color: #888;
+  }
+  .contact
+{
+  height: 20%;
+}
+.center{
+    text-align: center;
 }
