@@ -1,0 +1,427 @@
+* {
+    font-family: 'Acme', sans-serif;
+}
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: rgb(247, 252, 246);
+  
+    top: 0px;
+   
+    background-size:cover ;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+nav > ul li:hover .sous
+{
+    display: block;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    border-bottom: 2px solid transparent;
+    padding: 10px 10px;
+}   
+
+nav a:hover{
+    color: rgba(82, 75, 75, 0.74);
+    
+    padding-bottom: 10px;
+}
+.deroulant >a::after{
+    content:"▼" ;
+    font-size: 12px;
+}
+
+
+.sous
+{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 1px 25px rgb(179, 104, 104);
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+    background-color: blanchedalmond;
+}
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+
+}
+.sous a:hover{
+    border-bottom: none;
+    
+}
+.home
+{
+    width: 30px;
+    float: left;  
+    margin: 10px 10px 10px;
+}
+.ajustementmenu
+{
+    margin: 10px 0px 10px;
+}
+body {
+    background-color: #DBDBD9;
+    margin: 10px 0 0 0;
+    color: #DBDBD9;
+}
+
+
+
+h1.titre {
+    font-size: 30px;
+   
+    text-transform: uppercase;
+    color: rgb(80, 75, 75);
+}
+
+
+/* Destinations */
+
+section#destinations {
+    margin: 0px 20% 0 20%;
+}
+
+section#destinations h3 {
+    padding-top: 50px;
+    opacity: 0.5;
+    color: #373737;
+}
+
+div.destination-item {
+    color: #373737;
+    height: 300px;
+    margin: 15px;
+    position: relative;
+    flex: 1 0 29%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div.destination-item:hover {
+    transform: scale(0.98);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.2s all;
+}
+
+div.destinations-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barcelone { background: url(barcelone.jpg); }
+.dubai { background: url(dubai.jpg); }
+.londres { background: url(londres.jpg); }
+.paris { background: url(paris.jpg); }
+.tokyo { background: url(tokyo.jpg); }
+.tahiti { background: url(tahiti.jpg); }
+
+.overlay { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+span.nom {
+    position: relative;
+    color: #9c4848;
+    background-color: #DBDBD9;
+    top: 20px;
+    float: right;
+    padding: 12px;
+    font-size: 22px;
+}
+
+span.prix {
+    position: relative;
+    color: #fff;
+    background-color: #f38d07d0;
+    padding: 12px;
+    font-size: 25px;
+    top: 220px;
+}
+
+
+
+
+
+.search-form {
+    transform: translateY(75px);
+}
+
+.form-group {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.form-group input, select, option{
+    border: none;
+    padding: 5px;
+    background-color: bisque;
+}
+
+.form-group label {
+    margin: 5px;
+    padding: 10px;
+}
+.center 
+{
+    text-align: center;
+}
+
+/* Pied de page */
+
+footer p {
+    text-align: center;
+    color: #373737;
+    padding: 10px;
+}
+
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	width: 100%;
+	min-height: 45rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	background-color: whitesmoke;
+}
+.container {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:800px
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 37.5rem;
+	border: 10px solid rgb(44, 39, 39);
+	box-shadow: 0px 8px 10px 8px grey;
+}	
+
+#proparallax img {
+	position: absolute;
+	width: 50rem;
+	height: 37.5rem;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes parallax_un { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 37.5rem;
+		width: 50rem;
+		left: 0rem;
+		opacity: 5;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 37.5rem;
+		width: 0rem;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 37.5rem;
+		width: 0rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes parallax_deux { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes parallax_trois { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 0rem;
+		height: 37.5rem;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 50rem;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 50rem;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 0rem;
+		right: 0rem;
+		left: 0rem;
+		height: 37.5rem;
+		opacity: 1;
+	}
+}
+
+#proparallax img.un{
+	animation-name: parallax_un; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.deux {
+	animation-name: parallax_deux; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.trois {
+	animation-name: parallax_trois; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+
+
+.espacegris
+{   margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(95, 86, 86);
+
+}
+input {
+    width: 250px;
+    padding: 10px 12px;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    border-radius: 4px;
+    background: #e3e3e3;
+    color: #888;
+  }
+  .contact
+{
+  height: 20%;
+}
+.center{
+    text-align: center;
+}
