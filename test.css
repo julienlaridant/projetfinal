@@ -1,17 +1,26 @@
 * {
     font-family: 'Acme', sans-serif;
 }
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	width: 100%;
+	min-height: 45rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	background-color: whitesmoke;
+}
 
-
+/*menu*/
 nav{
     width: 100%;
-    height: 60px;
+    height: 70px;
     margin: 0 auto;
     background-color: rgb(247, 252, 246);
   
     top: 0px;
    
-    background-size:cover ;
+	background-size:cover ;
+	
 }
 
 nav ul{
@@ -36,11 +45,11 @@ nav ul::after{
 }
 
 nav a{
-    display: block;
+   
     text-decoration: none;
     color: rgb(19, 17, 17);
     border-bottom: 2px solid transparent;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }   
 
 nav a:hover{
@@ -81,12 +90,16 @@ nav a:hover{
 {
     width: 30px;
     float: left;  
-    margin: 10px 10px 10px;
+    margin: 30px 10px 10px;
 }
 .ajustementmenu
 {
-    margin: 10px 0px 10px;
+    margin: 0px 0px 10px;
 }
+
+/*fin menu*/
+
+
 body {
     background-color: #DBDBD9;
     margin: 10px 0 0 0;
@@ -106,7 +119,7 @@ h1.titre {
 /* Destinations */
 
 section#destinations {
-    margin: 0px 20% 0 20%;
+    margin: 10px 20% 0 20%;
 }
 
 section#destinations h3 {
@@ -205,21 +218,10 @@ span.prix {
 
 /* Pied de page */
 
-footer p {
-    text-align: center;
-    color: #373737;
-    padding: 10px;
-}
 
 
-body {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	width: 100%;
-	min-height: 45rem;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: center;
-	background-color: whitesmoke;
-}
+
+
 .container {
 	width:100%;
 	padding-right:15px;
@@ -230,7 +232,7 @@ body {
 }
 /* Basic appearance stuff ends here */
 
-/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+/* dimenssion image */
 #proparallax {
 	display: block;
 	position: relative;
@@ -246,6 +248,7 @@ body {
 	height: 37.5rem;
 	overflow: hidden;
 	object-fit: cover;
+	
 }
 
 @keyframes parallax_un { /* controls img.one movement */
@@ -339,25 +342,25 @@ body {
 	0% { /* .imageoff */
 		opacity: 0;
 	}
-	61.10%{ /* .imageon */
+	61.10%{ 
 		opacity: 0;
 	}
-	61.11% { /* .imageinitial */
+	61.11% { 
 		width: 0rem;
 		height: 37.5rem;
 		left: 50rem;
 		opacity: 1;		
 	}
-	66.67% { /* .imageloaded */
+	66.67% { 
 		width: 50rem;
 		left: 0rem;
 	}
-	/* .imagehold runs from 66.67% - 94.43% */
-	94.43% { /* .imageloaded */
+	
+	94.43% { 
 		width: 50rem;
 		left: 0rem;
 	}
-	94.44% { /* .imagepreunload */
+	94.44% { 
 		width: 50rem;
 		left: 0rem;
 		right: 50rem;
@@ -372,7 +375,7 @@ body {
 }
 
 #proparallax img.un{
-	animation-name: parallax_un; /* controls img.one movement */
+	animation-name: parallax_un; /* mouvement image1 */
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 15s;
@@ -381,7 +384,7 @@ body {
 }
 
 #proparallax img.deux {
-	animation-name: parallax_deux; /* controls img.two movement */
+	animation-name: parallax_deux; /*mouvement image 2 */
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 15s;
@@ -390,7 +393,7 @@ body {
 }
 
 #proparallax img.trois {
-	animation-name: parallax_trois; /* controls img.three movement */
+	animation-name: parallax_trois; /* mouvement image 3 */
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 15s;
@@ -398,7 +401,7 @@ body {
 	object-fit: cover;
 }
 
-
+/* formulaire*/
 
 .espacegris
 {   margin-top: 100px;
